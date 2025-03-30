@@ -2,18 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YouTube Clone</title>
-    <!-- Google Fonts -->
+    <link rel="icon" type="image/png" href="./assets/youtube.png">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./assets/youtube.png">
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <!-- CSS only -->
-    <link rel="stylesheet" href="index.css" />
   </head>
 
   <body>
@@ -71,17 +70,7 @@
             </g>
           </svg>
         </button>
-        <button class="navigation__button">
-          <svg class="navigation__icon" viewBox="0 0 24 24">
-            <g class="style-scope yt-icon">
-              <path
-                d="M12,22c1.1,0,2-0.9,2-2h-4C10,21.1,10.9,22,12,22z M18,16v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-0.83-0.67-1.5-1.5-1.5 S10.5,3.17,10.5,4v0.68C7.64,5.36,6,7.92,6,11v5l-2,2v1h16v-1L18,16z M16,17L8,17v-6c0-2.48,1.51-4.5,4-4.5s4,2.02,4,4.5V17z"
-                class="style-scope yt-icon"
-              ></path>
-            </g>
-          </svg>
-        </button>
-        <div class="navigation__avatar"></div>
+        <div class="navigation__avatar" style="background-image: url('./assets/wnted.jpg');"></div>
       </div>
     </nav>
     <!-- chips/labels -->
@@ -142,22 +131,7 @@
           </svg>
           <span> Subscriptions </span>
         </a>
-        <!-- For YouTube Premium Users only -->
-        <!-- <a class="sidebar__section__link" href="/">
-          <svg viewBox="0 0 24 24">
-            <g>
-              <path
-                d="M12 0.47998C5.63998 0.47998 0.47998 5.63998 0.47998 12C0.47998 18.36 5.63998 23.52 12 23.52C18.36 23.52 23.52 18.36 23.52 12C23.52 5.63998 18.36 0.47998 12 0.47998ZM12 18.82C8.22998 18.82 5.17998 15.77 5.17998 12C5.17998 8.22998 8.22998 5.17998 12 5.17998C15.77 5.17998 18.82 8.22998 18.82 12C18.82 15.77 15.77 18.82 12 18.82Z"
-                fill-rule="nonzero"
-              ></path>
-              <path
-                d="M12 6.02002C8.70996 6.02002 6.01996 8.70002 6.01996 12C6.01996 15.3 8.69996 17.98 12 17.98C15.3 17.98 17.98 15.3 17.98 12C17.98 8.70002 15.29 6.02002 12 6.02002ZM9.74996 15.4V8.60002L15.63 12L9.74996 15.4Z"
-                fill-rule="nonzero"
-              ></path>
-            </g>
-          </svg>
-          <span> YouTube Music </span>
-        </a> -->
+      
       </section>
 
       <section class="sidebar__section">
@@ -533,34 +507,44 @@
         <div class="recommendation__content">
           <a class="content__link" href="#">
             <div class="thumbnail">
-              <img src="https://source.unsplash.com/1800x900/?river" alt="thumbnail" />
+              <img src="assets/dahih.jpg" alt="Tomb Raider thumbnail" />
+              <video class="preview-video" muted loop>
+                <source src="https://youtu.be/iTJvpGspmJA" type="video/mp4">
+              </video>
               <div class="duration">
-                <h5>9:43</h5>
+                <h5>12:45</h5>
+              </div>
+              <div class="preview">
+                <svg viewBox="0 0 24 24">
+                  <g>
+                    <path d="M8,5v14l11-7z"></path>
+                  </g>
+                </svg>
               </div>
             </div>
             <div class="content__description">
               <div class="channel__logo">
                 <a class="channel__link" href="#">
-                  <img src="assets/account_circle.svg" alt="channel icon" />
+                  <img src="assets/NewMediaAcademylife.jpg" alt="channel icon" />
                 </a>
               </div>
               <div class="title_and_channel">
-                <div class="title" title="This is a Sample title of the video">
-                  <h4>This is a Sample title of the video</h4>
+                <div class="title" title="هل فعلًا الدم عمره ما يبقى مياه؟ | الدحيح">
+                  <h4>هل فعلًا الدم عمره ما يبقى مياه؟ | الدحيح</h4>
                 </div>
                 <div class="channel">
                   <div class="channel__name">
                     <a class="channel__link" href="#">
-                      <p>Channel Name</p>
+                      <p>New Media Academy Life</p>
                     </a>
                   </div>
                   <div class="views__upload">
                     <div class="views">
-                      <p>12K views</p>
+                      <p>1M views</p>
                     </div>
                     <div class="circle"></div>
                     <div class="upload">
-                      <p>6 days ago</p>
+                      <p>5 days ago</p>
                     </div>
                   </div>
                 </div>
@@ -581,34 +565,46 @@
         <div class="recommendation__content">
           <a class="content__link" href="#">
             <div class="thumbnail">
-              <img src="https://source.unsplash.com/1600x910/?landscape" alt="thumbnail" />
+              <img src="assets/iTJvpGspmJA-SD.jpg" alt="Lara Croft thumbnail" />
+              <video class="preview-video" muted loop autoplay playsinline>
+                <source src="./" type="video/mp4">
+              </video>
               <div class="duration">
-                <h5>9:43</h5>
+                <h5>15:30</h5>
+              </div>
+              <div class="preview">
+                <svg viewBox="0 0 24 24">
+                  <g>
+                    <path d="M8,5v14l11-7z"></path>
+                  </g>
+                </svg>
               </div>
             </div>
             <div class="content__description">
               <div class="channel__logo">
                 <a class="channel__link" href="#">
-                  <img src="assets/account_circle.svg" alt="channel icon" />
+                  <img src="assets/beinsports.jpg" alt="channel icon" />
                 </a>
               </div>
               <div class="title_and_channel">
-                <div class="title" title="This is a Sample title of the video">
-                  <h4>This is a Sample title of the video</h4>
+                <div class="title" title="ملخص مباراة سانت إيتيان وباريس سان جيرمان (1-6) | الدوري الفرنسي - الجولة 27
+">
+                  <h4>ملخص مباراة سانت إيتيان وباريس سان جيرمان (1-6) | الدوري الفرنسي - الجولة 27
+                  </h4>
                 </div>
                 <div class="channel">
                   <div class="channel__name">
                     <a class="channel__link" href="#">
-                      <p>Channel Name</p>
+                      <p>beIN SPORTS</p>
                     </a>
                   </div>
                   <div class="views__upload">
                     <div class="views">
-                      <p>12K views</p>
+                      <p>396,158 views</p>
                     </div>
                     <div class="circle"></div>
                     <div class="upload">
-                      <p>6 days ago</p>
+                      <p>13 hours ago</p>
                     </div>
                   </div>
                 </div>
@@ -629,34 +625,46 @@
         <div class="recommendation__content">
           <a class="content__link" href="#">
             <div class="thumbnail">
-              <img src="https://source.unsplash.com/1620x900/?landscape" alt="thumbnail" />
+              <img src="assets/0VM88nLZK0w-HD.jpg"  />
+              <video class="preview-video" muted loop autoplay playsinline>
+                <source src="./assets/The New Mercedes AMG GT 63 S E Performance 2025 Test Drive.mp4" type="video/mp4">
+              </video>
               <div class="duration">
-                <h5>9:43</h5>
+                <h5>18:20</h5>
+              </div>
+              <div class="preview">
+                <svg viewBox="0 0 24 24">
+                  <g>
+                    <path d="M8,5v14l11-7z"></path>
+                  </g>
+                </svg>
               </div>
             </div>
             <div class="content__description">
               <div class="channel__logo">
                 <a class="channel__link" href="#">
-                  <img src="assets/account_circle.svg" alt="channel icon" />
+                  <img src="assets/iconmed.jpg" alt="channel icon" />
                 </a>
               </div>
               <div class="title_and_channel">
-                <div class="title" title="This is a Sample title of the video">
-                  <h4>This is a Sample title of the video</h4>
+                <div class="title" title="The New Mercedes AMG GT 63 S E Performance 2025 Test Drive
+">
+                  <h4>The New Mercedes AMG GT 63 S E Performance 2025 Test Drive
+                  </h4>
                 </div>
                 <div class="channel">
                   <div class="channel__name">
                     <a class="channel__link" href="#">
-                      <p>Channel Name</p>
+                    <p> Alaatin61 </p>
                     </a>
                   </div>
                   <div class="views__upload">
                     <div class="views">
-                      <p>12K views</p>
+                      <p>156K views</p>
                     </div>
                     <div class="circle"></div>
                     <div class="upload">
-                      <p>6 days ago</p>
+                      <p>1 week ago</p>
                     </div>
                   </div>
                 </div>
@@ -680,7 +688,17 @@
         <div class="recommendation__content">
           <a class="content__link" href="#">
             <div class="thumbnail">
-              <img src="https://source.unsplash.com/1600x900/" alt="thumbnail" />
+              <img src="assets/tlw1TWnIhjM-HD.jpg" alt="thumbnail" />
+              <div class="preview">
+                <svg viewBox="0 0 24 24">
+                  <g>
+                    <path d="M8,5v14l11-7z"></path>
+                  </g>
+                </svg>
+              </div>
+              <video class="preview-video" muted loop autoplay playsinline>
+                <source src="./assets/Tflow _ BRM BRM BRM.mp4" type="video/mp4">
+              </video>
               <div class="duration">
                 <h5>9:43</h5>
               </div>
@@ -688,17 +706,75 @@
             <div class="content__description">
               <div class="channel__logo">
                 <a class="channel__link" href="#">
-                  <img src="assets/account_circle.svg" alt="channel icon" />
+                  <img src="assets/TFLOW.jpg" alt="channel icon" />
                 </a>
               </div>
               <div class="title_and_channel">
-                <div class="title" title="This is a Sample title of the video and some extended text to see the alignments.">
-                  <h4>This is a Sample title of the video and some extended text to see the alignments.</h4>
+                <div class="title" title="T.flow BRM BRM BRM , I'M THE KING MIXTAPE">
+                  <h4>T.flow BRM BRM BRM , I'M THE KING MIXTAPE</h4>
                 </div>
                 <div class="channel">
                   <div class="channel__name">
                     <a class="channel__link" href="#">
-                      <p>Channel Name</p>
+                      <p>TFLOW</p>
+                    </a>
+                  </div>
+                  <div class="views__upload">
+                    <div class="viewSs">
+                      <p>47M views</p>
+                    </div>
+                    <div class="circle"></div>
+                    <div class="upload">
+                      <p>Feb 8, 2017</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__button">
+                <svg viewBox="0 0 20 20">
+                  <g class="style-scope yt-icon">
+                    <path
+                      d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z"
+                      class="style-scope yt-icon"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="recommendation__content">
+          <a class="content__link" href="#">
+            <div class="thumbnail">
+              <img src="assets/EFmxPMdBqmU-HD.jpg" alt="thumbnail" />
+              <video class="preview-video" muted loop autoplay playsinline>
+                <source src="" type="video/mp4">
+              </video>
+              <div class="duration">
+                <h5>6:30</h5>
+              </div>
+              <div class="preview">
+                <svg viewBox="0 0 24 24">
+                  <g>
+                    <path d="M8,5v14l11-7z"></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <div class="content__description">
+              <div class="channel__logo">
+                <a class="channel__link" href="#">
+                  <img src="assets/alanbecker.jpg" alt="channel icon" />
+                </a>
+              </div>
+              <div class="title_and_channel">
+                <div class="title" title="Animation vs. Coding">
+                  <h4>Animation vs. Coding</h4>
+                </div>
+                <div class="channel">
+                  <div class="channel__name">
+                    <a class="channel__link" href="#">
+                      <p>Alan Becker </p>
                     </a>
                   </div>
                   <div class="views__upload">
@@ -728,73 +804,35 @@
         <div class="recommendation__content">
           <a class="content__link" href="#">
             <div class="thumbnail">
-              <img src="https://source.unsplash.com/1600x900/?nature" alt="thumbnail" />
+              <img src="assets/rjNtYoFT0n4-HD.jpg" alt="thumbnail" />
+              <video class="preview-video" muted loop autoplay playsinline>
+                <source src="./assets/0! 1 in 60 Seconds.mp4" type="video/mp4">
+              </video>
               <div class="duration">
-                <h5>9:43</h5>
+                <h5>1:01</h5>
               </div>
-            </div>
-            <div class="content__description">
-              <div class="channel__logo">
-                <a class="channel__link" href="#">
-                  <img src="assets/account_circle.svg" alt="channel icon" />
-                </a>
-              </div>
-              <div class="title_and_channel">
-                <div class="title" title="This is a Sample title of the video and some extended text to see the alignments.">
-                  <h4>This is a Sample title of the video and some extended text to see the alignments.</h4>
-                </div>
-                <div class="channel">
-                  <div class="channel__name">
-                    <a class="channel__link" href="#">
-                      <p>Channel Name</p>
-                    </a>
-                  </div>
-                  <div class="views__upload">
-                    <div class="views">
-                      <p>12K views</p>
-                    </div>
-                    <div class="circle"></div>
-                    <div class="upload">
-                      <p>6 days ago</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__button">
-                <svg viewBox="0 0 20 20">
-                  <g class="style-scope yt-icon">
-                    <path
-                      d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z"
-                      class="style-scope yt-icon"
-                    ></path>
+              <div class="preview">
+                <svg viewBox="0 0 24 24">
+                  <g>
+                    <path d="M8,5v14l11-7z"></path>
                   </g>
                 </svg>
               </div>
             </div>
-          </a>
-        </div>
-        <div class="recommendation__content">
-          <a class="content__link" href="#">
-            <div class="thumbnail">
-              <img src="https://source.unsplash.com/1600x900/?city" alt="thumbnail" />
-              <div class="duration">
-                <h5>9:43</h5>
-              </div>
-            </div>
             <div class="content__description">
               <div class="channel__logo">
                 <a class="channel__link" href="#">
-                  <img src="assets/account_circle.svg" alt="channel icon" />
+                  <img src="assets/worldofmath.jpg" alt="channel icon" />
                 </a>
               </div>
               <div class="title_and_channel">
-                <div class="title" title="This is a Sample title of the video and some extended text to see the alignments.">
-                  <h4>This is a Sample title of the video and some extended text to see the alignments.</h4>
+                <div class="title" title="0! = 1 in 60 Seconds">
+                  <h4>0! = 1 in 60 Seconds</h4>
                 </div>
                 <div class="channel">
                   <div class="channel__name">
                     <a class="channel__link" href="#">
-                      <p>Channel Name</p>
+                      <p> World of Math</p>
                     </a>
                   </div>
                   <div class="views__upload">
@@ -823,9 +861,5 @@
         </div>
       </div>
     </div>
-
-    <script>
-      // Your existing JavaScript code here
-    </script>
   </body>
 </html>
